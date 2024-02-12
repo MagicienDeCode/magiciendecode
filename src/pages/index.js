@@ -8,7 +8,7 @@ import './index.less'
 const IndexPage = () => {
   return (
     <div className="home">
-      <div className="home-line1">
+      <div className="home-left">
         <div className="home-line1-left">
           <Badge count={32}>
             <Avatar src={`xiang.jpg`} className="home-avatar" />
@@ -16,6 +16,7 @@ const IndexPage = () => {
         </div>
       </div>
       <div>nijiaying</div>
+      <p>jiaying</p>
       <div>
         <StaticImage src="../images/star.png" alt="test" />
       </div>

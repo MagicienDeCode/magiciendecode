@@ -4,9 +4,10 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://www.magiciendecode.fr`,
-    title: `MagicienDeCode`
+    title: `MagicienDeCode`,
   },
   plugins: [
+    `gatsby-plugin-layout`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
@@ -29,8 +30,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-antd',
       options: {
-        style: true
-      }
-  }
+        style: true,
+      },
+    },
   ],
 }
