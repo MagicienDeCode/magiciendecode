@@ -1,7 +1,6 @@
 import * as React from 'react'
 import './index.less'
 import './global.less'
-import { Affix } from 'antd'
 
 const IndexLayout = ({ children }) => {
   return (
