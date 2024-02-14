@@ -21,7 +21,7 @@ const Home = () => {
               <p>LI Xiang - 李 想</p>
             </Link>
           </div>
-          <div className="home-left-links">
+          <div className="home-left-links display-none">
             <div className="home-left-text">
               <p>
                 With Experience and Education in the areas of Computer Science,
@@ -31,7 +31,7 @@ const Home = () => {
             </div>
             <a
               target="_blank"
-              href="mailto:xiangfr007@gmail.com"
+              href="mailto:xiangli1105@hotmail.com"
               rel="noopener noreferrer"
             >
               <Row className="home-row">
@@ -39,21 +39,39 @@ const Home = () => {
                   <img alt="email" className="home-img" src={`email-1.png`} />
                 </Col>
                 <Col>
-                  <span className="text-link"> xiangfr007@gmail.com </span>
+                  <span className="text-link"> Email </span>
                 </Col>
               </Row>
             </a>
             <a
               target="_blank"
-              href="mailto:444137520@qq.com"
+              href="https://www.linkedin.com/in/xiang-li-3346b512a/"
               rel="noopener noreferrer"
             >
               <Row className="home-row">
                 <Col>
-                  <img alt="email" className="home-img" src={`email-2.png`} />
+                  <img
+                    alt="linkedin"
+                    className="home-img"
+                    src={`linkedin.png`}
+                  />
                 </Col>
                 <Col>
-                  <span className="text-link"> 444137520@qq.com </span>
+                  <span className="text-link"> Linkedin </span>
+                </Col>
+              </Row>
+            </a>
+            <a
+              target="_blank"
+              href="https://github.com/MagicienDeCode"
+              rel="noopener noreferrer"
+            >
+              <Row className="home-row">
+                <Col>
+                  <img alt="github" className="home-img" src={`github.png`} />
+                </Col>
+                <Col>
+                  <span className="text-link"> Github</span>
                 </Col>
               </Row>
             </a>
@@ -67,26 +85,25 @@ const Home = () => {
                   <img alt="youtube" className="home-img" src={`youtube.png`} />
                 </Col>
                 <Col>
-                  <span className="text-link"> Subscribe me on Youtube</span>
+                  <span className="text-link"> Youtube </span>
                 </Col>
               </Row>
             </a>
             <a
               target="_blank"
-              href="https://www.ixigua.com/home/105169725727/"
+              href="https://leetcode.com/MagicienDeCode/"
               rel="noopener noreferrer"
-              className="display-none"
             >
               <Row className="home-row">
                 <Col>
                   <img
-                    alt="watermelon"
+                    alt="leetcode"
                     className="home-img"
-                    src={`xigua.png`}
+                    src={`leetcode.png`}
                   />
                 </Col>
                 <Col>
-                  <span className="text-link"> 在 西瓜视频 关注我</span>
+                  <span className="text-link"> Leetcode </span>
                 </Col>
               </Row>
             </a>
@@ -104,21 +121,7 @@ const Home = () => {
                   />
                 </Col>
                 <Col>
-                  <span className="text-link"> Follow me on Bilibili</span>
-                </Col>
-              </Row>
-            </a>
-            <a
-              target="_blank"
-              href="https://github.com/MagicienDeCode"
-              rel="noopener noreferrer"
-            >
-              <Row className="home-row">
-                <Col>
-                  <img alt="github" className="home-img" src={`github.png`} />
-                </Col>
-                <Col>
-                  <span className="text-link"> Follow me on Github</span>
+                  <span className="text-link"> Bilibili </span>
                 </Col>
               </Row>
             </a>

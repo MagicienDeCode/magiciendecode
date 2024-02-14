@@ -1,14 +1,12 @@
 import * as React from 'react'
 import './index.less'
 import './global.less'
+import MyFooter from '../components/footer/footer'
 
-import { Breadcrumb, Layout, Menu } from 'antd'
+import { Layout } from 'antd'
 
 const { Header, Content, Footer } = Layout
-const items = new Array(3).fill(null).map((_, index) => ({
-  key: String(index + 1),
-  label: `nav ${index + 1}`,
-}))
+
 const App = ({ children }) => {
   return (
     <Layout>
@@ -20,43 +18,19 @@ const App = ({ children }) => {
           width: '100%',
           display: 'flex',
           alignItems: 'center',
+          backgroundColor: 'blue',
         }}
-      >
-        <div className="demo-logo" />
-        <Menu
-          theme="dark"
-          mode="horizontal"
-          defaultSelectedKeys={['2']}
-          items={items}
-          style={{
-            flex: 1,
-            minWidth: 0,
-          }}
-        />
-      </Header>
-      <Content
-        className="index-content"
-        style={{
-          padding: '0 1em',
-        }}
-      >
-        <Breadcrumb
-          style={{
-            margin: '16px 0',
-          }}
-        >
-          <Breadcrumb.Item>Home</Breadcrumb.Item>
-          <Breadcrumb.Item>List</Breadcrumb.Item>
-          <Breadcrumb.Item>App</Breadcrumb.Item>
-        </Breadcrumb>
+      ></Header>
+      <Content className="index-content">
         <div>{children}</div>
       </Content>
       <Footer
         style={{
           textAlign: 'center',
+          backgroundColor: 'black',
         }}
       >
-        Ant Design ©{new Date().getFullYear()} Created by Ant UED
+        <MyFooter />
       </Footer>
     </Layout>
   )
