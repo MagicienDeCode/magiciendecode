@@ -5,21 +5,36 @@
     width: 80%;
 }
 
+.app-layout{
+    min-height: 100vh;
+}
+
 .text-size{
     font-size: 1.3em;
 }  
 
-@media (max-width: 1150px) {
+.index-header{
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    padding-left: 3em;
+    padding-right: 1em;
+}
+
+@media (min-width: 1920px) {
+    .index-content {
+        width: 60%;
+    }
+    .index-header {
+        width: 60%;
+    }
+}
+  
+@media (max-width: 992px) {
     .index-content{
         width: 95%;
     }
-    .text-size{
-        font-size: 1.25em;
-    }
-}
-
-@media (max-width: 992px) {
-    .index-content{
+    .index-header {
         width: 95%;
     }
     .text-size{
@@ -30,5 +45,10 @@
 @media (max-width: 576px) {
     .index-content{
         width: 100%;
+    }
+    .index-header {
+        width: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 }

@@ -2,6 +2,7 @@ import * as React from 'react'
 import './index.less'
 import './global.less'
 import MyFooter from '../components/footer/footer'
+import MyHeader from '../components/header/header'
 
 import { Layout } from 'antd'
 
@@ -9,18 +10,18 @@ const { Header, Content, Footer } = Layout
 
 const App = ({ children }) => {
   return (
-    <Layout>
+    <Layout className="app-layout">
       <Header
+        className="index-header"
         style={{
           position: 'sticky',
           top: 0,
           zIndex: 1,
-          width: '100%',
-          display: 'flex',
-          alignItems: 'center',
-          backgroundColor: 'blue',
+          backgroundColor: 'transparent',
         }}
-      ></Header>
+      >
+        <MyHeader />
+      </Header>
       <Content className="index-content">
         <div>{children}</div>
       </Content>

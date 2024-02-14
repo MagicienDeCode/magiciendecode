@@ -11,7 +11,7 @@ const Home = () => {
         <div className="home-left">
           <div className="home-xiang-avatar">
             <Link to="/">
-              <Badge count={32}>
+              <Badge>
                 <Avatar src={`xiang.jpg`} className="xiang-avatar" />
               </Badge>
             </Link>
@@ -36,7 +36,7 @@ const Home = () => {
             >
               <Row className="home-row">
                 <Col>
-                  <img alt="email" className="home-img" src={`email-1.png`} />
+                  <img alt="email" className="home-img" src={`email.png`} />
                 </Col>
                 <Col>
                   <span className="text-link"> Email </span>
