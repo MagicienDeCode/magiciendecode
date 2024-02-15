@@ -13,10 +13,6 @@
   margin-bottom: 0.8em;
 }
 
-.home-left{
-  padding: 2em; 
-}
-
 .home-left-text{
   font-size: 1.1em;
 }
@@ -36,33 +32,31 @@
   width: 25px;
 }
 
-.home-right{
-  padding: 1em;
-  height: 100%;
-}
-
 .text-link{
   color: black;
   margin-left: 20px;
   font-size: 1.3em;
 }
 
-.col-1{
+.home-left{
   flex: 25%;
   max-width: 285px;
+  padding: 2em; 
 }
-.col-2{
+.home-right{
   flex: 65%;
   max-width: calc(65%);
+  padding: 1em;
+  height: 100%;
 }
 
 
 @media (max-width: 800px) {
-  .col-1{
+  .home-left{
     flex: 100%;
     max-width: 100%;
   }
-  .col-2{
+  .home-right{
     flex: 100%;
     max-width: 100%;
   }
