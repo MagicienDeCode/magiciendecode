@@ -146,7 +146,7 @@ const Home = () => {
         <div className="home-left-carousel">
           <Carousel autoplay>
             <div className="text-size">
-              <p>2022 annual appraisal</p>
+              <h4>2022 annual appraisal</h4>
               <p>
                 Xiang has done an excellent year. I could see a lot of changes
                 happening. Xiang took the lead on architecture proposing several
@@ -167,7 +167,7 @@ const Home = () => {
               </p>
             </div>
             <div className="text-size">
-              <p>2023 annual appraisal</p>
+              <h4>2023 annual appraisal</h4>
               <p>
                 Xiang did a very good year. Its contribution helped to build
                 product on time. He has a major contribution in Webhook and
