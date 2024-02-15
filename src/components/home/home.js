@@ -1,13 +1,13 @@
 import * as React from 'react'
-import { Avatar, Badge, Row, Col, Carousel } from 'antd'
+import { Avatar, Badge, Flex, Row, Col, Carousel } from 'antd'
 import { Link } from 'gatsby'
 
 import './home.less'
 
 const Home = () => {
   return (
-    <Row>
-      <Col key="col-1" className="col-1">
+    <Flex wrap="wrap" className="home-flex">
+      <div key="col-1" className="col-1">
         <div className="home-left">
           <div className="home-xiang-avatar">
             <Link to="/">
@@ -127,8 +127,8 @@ const Home = () => {
             </a>
           </div>
         </div>
-      </Col>
-      <Col key="col-2" className="col-2">
+      </div>
+      <div key="col-2" className="col-2">
         <div className="home-right">
           <h1>About Me</h1>
           <div className="text-size">
@@ -157,51 +157,50 @@ const Home = () => {
               rectify mistakes and be tenacious is essential.
             </p>
           </div>
+          <div className="home-left-carousel">
+            <Carousel autoplay>
+              <div className="text-size">
+                <p>2022 annual appraisal</p>
+                <p>
+                  Xiang has done an excellent year. I could see a lot of changes
+                  happening. Xiang took the lead on architecture proposing
+                  several scenarios using HLD (High Level Design)
+                  methodology/System Design, and moving step by step to the
+                  specifics. He proposed to add a proxy in the design which
+                  bring a lot of benefits. The proposed solution came with
+                  several improvements linked to the event management. All the
+                  points are discussed with the team before being implemented.
+                  Some technical choices were debate and I could see that Xiang
+                  did not impose its solution and if the arguments brought by
+                  the other team members was making sense, he was able to accept
+                  their counter proposal. Xiang is in good track to improve its
+                  communication skills. Technically he is able to check the
+                  peers contribution and integrate it quickly in its reasoning.
+                  This ability make him quick to spot issues and find
+                  solutions/workaround. Again, a very good job in 2022. I hope
+                  Xiang will continue to perform like this in 2023.
+                </p>
+              </div>
+              <div className="text-size">
+                <p>2023 annual appraisal</p>
+                <p>
+                  Xiang did a very good year. Its contribution helped to build
+                  product on time. He has a major contribution in Webhook and
+                  SlimCollect products. We can see that Thanks to him and the
+                  team we are delivering products which are long due by the
+                  company (webhook) in a few months. Xiang handled the changes
+                  as a team leader without creating any tension, by respecting
+                  its colleagues as equal, and helping them when needed. Please
+                  continue like this as 2024 will be the opportunity to build a
+                  bigger picture of the company on the Direct Debit front. We
+                  will need Xiang strength to build this new picture.
+                </p>
+              </div>
+            </Carousel>
+          </div>
         </div>
-      </Col>
-      <Col>
-        <div className="home-left-carousel">
-          <Carousel autoplay>
-            <div className="text-size">
-              <p>2022 annual appraisal</p>
-              <p>
-                Xiang has done an excellent year. I could see a lot of changes
-                happening. Xiang took the lead on architecture proposing several
-                scenarios using HLD (High Level Design) methodology/System
-                Design, and moving step by step to the specifics. He proposed to
-                add a proxy in the design which bring a lot of benefits. The
-                proposed solution came with several improvements linked to the
-                event management. All the points are discussed with the team
-                before being implemented. Some technical choices were debate and
-                I could see that Xiang did not impose its solution and if the
-                arguments brought by the other team members was making sense, he
-                was able to accept their counter proposal. Xiang is in good
-                track to improve its communication skills. Technically he is
-                able to check the peers contribution and integrate it quickly in
-                its reasoning. This ability make him quick to spot issues and
-                find solutions/workaround. Again, a very good job in 2022. I
-                hope Xiang will continue to perform like this in 2023.
-              </p>
-            </div>
-            <div className="text-size">
-              <p>2023 annual appraisal</p>
-              <p>
-                Xiang did a very good year. Its contribution helped to build
-                product on time. He has a major contribution in Webhook and
-                SlimCollect products. We can see that Thanks to him and the team
-                we are delivering products which are long due by the company
-                (webhook) in a few months. Xiang handled the changes as a team
-                leader without creating any tension, by respecting its
-                colleagues as equal, and helping them when needed. Please
-                continue like this as 2024 will be the opportunity to build a
-                bigger picture of the company on the Direct Debit front. We will
-                need Xiang strength to build this new picture.
-              </p>
-            </div>
-          </Carousel>
-        </div>
-      </Col>
-    </Row>
+      </div>
+    </Flex>
   )
 }
 
