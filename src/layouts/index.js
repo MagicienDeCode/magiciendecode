@@ -10,17 +10,18 @@ const { Header, Content, Footer } = Layout
 
 const App = ({ children }) => {
   return (
-    <Layout className="app-layout">
+    <Layout className="app-layout bg-linear">
       <Header
-        className="index-header"
+        className="bg-linear header"
         style={{
           position: 'sticky',
           top: 0,
           zIndex: 1,
-          backgroundColor: 'transparent',
         }}
       >
-        <MyHeader />
+        <div className="index-header">
+          <MyHeader />
+        </div>
       </Header>
       <Content className="index-content">
         <div>{children}</div>
