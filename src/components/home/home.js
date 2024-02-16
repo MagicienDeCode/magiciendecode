@@ -143,6 +143,7 @@ const Home = () => {
             rectify mistakes and be tenacious is essential.
           </p>
         </div>
+        <div className="home-right-divider-bgc" />
         <div className="home-left-carousel">
           <Carousel autoplay>
             <div className="text-size">
