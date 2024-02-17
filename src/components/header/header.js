@@ -1,6 +1,6 @@
 import * as React from 'react'
 import './header.less'
-import { Menu, Flex } from 'antd'
+import { Menu, Row, Col } from 'antd'
 import {
   AppstoreAddOutlined,
   FileDoneOutlined,
@@ -59,25 +59,27 @@ const items = [
 
 const MyHeader = () => {
   return (
-    <Flex justify="space-between" align="center" className="header">
-      <div className="header-logo">
+    <Row className="header" wrap={false}>
+      <Col className="header-logo-div">
         <Link to="/">
           <img alt="logo" src={`logo.png`} className="header-logo" />
         </Link>
-      </div>
-      <Menu
-        mode="horizontal"
-        className="header-menu"
-        selectable={false}
-        items={items}
-        overflowedIndicator={
-          <UnorderedListOutlined
-            style={{ fontSize: '1.5em', color: '#1677ff' }}
-          />
-        }
-        triggerSubMenuAction={'hover'}
-      />
-    </Flex>
+      </Col>
+      <Col className="header-menu-div">
+        <Menu
+          mode="horizontal"
+          className="header-menu"
+          selectable={false}
+          items={items}
+          overflowedIndicator={
+            <UnorderedListOutlined
+              style={{ fontSize: '1.5em', color: '#1677ff' }}
+            />
+          }
+          triggerSubMenuAction={'hover'}
+        />
+      </Col>
+    </Row>
   )
 }
 export default MyHeader
