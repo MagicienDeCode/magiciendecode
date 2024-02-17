@@ -18,7 +18,7 @@ const MyFooter = () => {
                 className="footer-img"
                 src={`linkedin-w.png`}
               />
-              <span className="footer-row-text">LINEDIN</span>
+              <span className="footer-row-text">LINKDIN</span>
             </Flex>
           </a>
         </div>
