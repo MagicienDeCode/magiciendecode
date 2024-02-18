@@ -12,11 +12,12 @@ const App = ({ children }) => {
   return (
     <Layout className="app-layout bg-linear">
       <Header
-        className="bg-linear header"
+        className="bg-linear layout-header"
         style={{
           position: 'sticky',
           top: 0,
           zIndex: 1,
+          backgroundColor: '#ffffff',
         }}
       >
         <div className="index-header">
