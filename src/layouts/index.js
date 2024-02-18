@@ -31,6 +31,7 @@ const App = ({ children }) => {
         style={{
           textAlign: 'center',
           backgroundColor: 'black',
+          marginTop: '20px',
         }}
       >
         <MyFooter />
