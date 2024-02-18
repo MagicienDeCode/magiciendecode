@@ -13,14 +13,13 @@ import { Link } from 'gatsby'
 function getItem(label, key, icon, children) {
   return {
     key,
-    icon,
     children,
     label,
   }
 }
 const items = [
   getItem(
-    <span className="menu-titles">Resume</span>,
+    <span className="menu-titles ant-menu-title-content">Resume</span>,
     '1',
     <FileDoneOutlined style={{ fontSize: '1.3em' }} />
   ),
@@ -49,8 +48,8 @@ const items = [
     ]
   ),
   getItem(
-    <Link to="/">
-      <span className="menu-titles">Contact</span>
+    <Link to="/" className="decoration-none">
+      <span className="menu-titles ant-menu-title-content">Contact</span>
     </Link>,
     'link',
     <ContactsOutlined style={{ fontSize: '1.3em' }} />
