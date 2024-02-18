@@ -9,6 +9,7 @@ import {
   UnorderedListOutlined,
 } from '@ant-design/icons'
 import { Link } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
 
 function getItem(label, key, icon, children) {
   return {
@@ -19,7 +20,9 @@ function getItem(label, key, icon, children) {
 }
 const items = [
   getItem(
-    <span className="menu-titles ant-menu-title-content">Resume</span>,
+    <Link to="/resume" className="decoration-none">
+      <span className="menu-titles ant-menu-title-content">Resume</span>
+    </Link>,
     '1',
     <FileDoneOutlined style={{ fontSize: '1.3em' }} />
   ),
@@ -61,7 +64,11 @@ const MyHeader = () => {
     <Row className="header" wrap={false}>
       <Col className="header-logo-div">
         <Link to="/">
-          <img alt="logo" src={`logo.png`} className="header-logo" />
+          <StaticImage
+            alt="logo"
+            src="../../images/logo.png"
+            className="header-logo"
+          />
         </Link>
       </Col>
       <Col className="header-menu-div">

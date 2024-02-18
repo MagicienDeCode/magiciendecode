@@ -1,6 +1,7 @@
 import * as React from 'react'
 import './footer.less'
 import { Row, Flex } from 'antd'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const MyFooter = () => {
   return (
@@ -13,10 +14,10 @@ const MyFooter = () => {
             rel="noopener noreferrer"
           >
             <Flex justify="center" align="center">
-              <img
+              <StaticImage
                 alt="linkedin"
                 className="footer-img"
-                src={`linkedin-w.png`}
+                src="../../images/linkedin-w.png"
               />
               <span className="footer-row-text">LINKDIN</span>
             </Flex>
@@ -30,7 +31,11 @@ const MyFooter = () => {
             rel="noopener noreferrer"
           >
             <Flex justify="center" align="center">
-              <img alt="github" className="footer-img" src={`github-w.png`} />
+              <StaticImage
+                alt="github"
+                className="footer-img"
+                src="../../images/github-w.png"
+              />
               <span className="footer-row-text">GITHUB</span>
             </Flex>
           </a>
@@ -42,7 +47,11 @@ const MyFooter = () => {
             rel="noopener noreferrer"
           >
             <Flex justify="center" align="center">
-              <img alt="youtube" className="footer-img" src={`youtube-w.png`} />
+              <StaticImage
+                alt="youtube"
+                className="footer-img"
+                src="../../images/youtube-w.png"
+              />
               <span className="footer-row-text">YOUTUBE</span>
             </Flex>
           </a>
@@ -54,10 +63,10 @@ const MyFooter = () => {
             rel="noopener noreferrer"
           >
             <Flex justify="center" align="center">
-              <img
+              <StaticImage
                 alt="bilibili"
                 className="footer-img"
-                src={`bilibili-w.png`}
+                src="../../images/bilibili-w.png"
               />
               <span className="footer-row-text">BILIBILI</span>
             </Flex>
@@ -70,7 +79,11 @@ const MyFooter = () => {
             rel="noopener noreferrer"
           >
             <Flex justify="center" align="center">
-              <img alt="xigua" className="footer-img" src={`xigua-w.png`} />
+              <StaticImage
+                alt="xigua"
+                className="footer-img"
+                src="../../images/xigua-w.png"
+              />
               <span className="footer-row-text">XIGUA</span>
             </Flex>
           </a>
@@ -82,10 +95,10 @@ const MyFooter = () => {
             rel="noopener noreferrer"
           >
             <Flex justify="center" align="center">
-              <img
+              <StaticImage
                 alt="leetcode"
                 className="footer-img"
-                src={`leetcode-w.png`}
+                src="../../images/leetcode-w.png"
               />
               <span className="footer-row-text">LEETCODE</span>
             </Flex>
