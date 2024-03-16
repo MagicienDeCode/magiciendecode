@@ -46,7 +46,7 @@ const Index = () => {
                   color: 'grey',
                   children: (
                     <Link to="#basic-info" className="decoration-none">
-                      <span className="resume-line-text">Resume</span>
+                      <span className="resume-line-text">RESUME</span>
                     </Link>
                   ),
                 },
@@ -137,12 +137,7 @@ const Index = () => {
                       </Badge>
                       <span className="skill-title">Java</span>
                     </Flex>
-                    <Progress
-                      percent={100}
-                      size="small"
-                      showInfo={false}
-                      strokeColor="#e7bfc0"
-                    />
+                    <Progress percent={99} size="small" showInfo={false} />
                   </Tooltip>
                 </Col>
                 <Col className="gutter-row" span={8}>
@@ -158,12 +153,7 @@ const Index = () => {
                       </Badge>
                       <span className="skill-title">Kotlin</span>
                     </Flex>
-                    <Progress
-                      percent={90}
-                      size="small"
-                      showInfo={false}
-                      strokeColor="#e7bfc0"
-                    />
+                    <Progress percent={90} size="small" showInfo={false} />
                   </Tooltip>
                 </Col>
                 <Col className="gutter-row" span={8}>
