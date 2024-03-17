@@ -1,6 +1,6 @@
 import * as React from 'react'
 import './header.less'
-import { Menu, Row, Col } from 'antd'
+import { Menu, Row, Col, QRCode, Popover } from 'antd'
 import {
   AppstoreAddOutlined,
   FileDoneOutlined,
@@ -51,9 +51,20 @@ const items = [
     ]
   ),
   getItem(
-    <Link to="/" className="decoration-none">
-      <span className="menu-titles ant-menu-title-content">Contact</span>
-    </Link>,
+    <Popover
+      overlayInnerStyle={{
+        padding: 0,
+      }}
+      content={
+        <QRCode
+          value="https://github.com/MagicienDeCode/images/blob/master/cv/xiang_en_2022_09_CV.pdf"
+          bordered={false}
+        />
+      }
+    >
+      <StaticImage alt="cv" className="cv-img" src="../../images/qrcode.png" />
+      <span />
+    </Popover>,
     'link',
     <ContactsOutlined style={{ fontSize: '1.3em' }} />
   ),
