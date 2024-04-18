@@ -40,7 +40,7 @@ const Index = () => {
                 {
                   dot: (
                     <Badge>
-                      <Avatar src={`../email-1.png`} size={20} />
+                      <Avatar src={`../icon_resume.png`} size={20} />
                     </Badge>
                   ),
                   color: 'grey',
@@ -53,7 +53,7 @@ const Index = () => {
                 {
                   dot: (
                     <Badge>
-                      <Avatar src={`../email-1.png`} size={20} />
+                      <Avatar src={`../tools.png`} size={20} />
                     </Badge>
                   ),
                   color: 'grey',
@@ -66,7 +66,7 @@ const Index = () => {
                 {
                   dot: (
                     <Badge>
-                      <Avatar src={`../email-1.png`} size={20} />
+                      <Avatar src={`../exp.png`} size={20} />
                     </Badge>
                   ),
                   color: 'grey',
@@ -79,7 +79,7 @@ const Index = () => {
                 {
                   dot: (
                     <Badge>
-                      <Avatar src={`../email-1.png`} size={20} />
+                      <Avatar src={`../education.png`} size={20} />
                     </Badge>
                   ),
                   color: 'grey',
@@ -129,11 +129,11 @@ const Index = () => {
                     title="This section includes all my skills and the level of
                   proficiency I have in each of them. I am first and foremost a
                   Full Stack Software Engineer"
-                    color="#e7bfc0"
+                    color="#60ACEB"
                   >
                     <Flex align="center" gap="small">
                       <Badge className="display-none skill-badge">
-                        <Avatar src={`../email-1.png`} />
+                        <Avatar src={`../java.png`} />
                       </Badge>
                       <span className="skill-title">Java</span>
                     </Flex>
@@ -145,11 +145,11 @@ const Index = () => {
                     title="This section includes all my skills and the level of
                   proficiency I have in each of them. I am first and foremost a
                   Full Stack Software Engineer"
-                    color="#e7bfc0"
+                    color="#60ACEB"
                   >
                     <Flex align="center" gap="small">
                       <Badge className="display-none skill-badge">
-                        <Avatar src={`../email-1.png`} />
+                        <Avatar src={`../kotlin.png`} />
                       </Badge>
                       <span className="skill-title">Kotlin</span>
                     </Flex>
@@ -161,11 +161,11 @@ const Index = () => {
                     title="This section includes all my skills and the level of
                   proficiency I have in each of them. I am first and foremost a
                   Full Stack Software Engineer"
-                    color="#e7bfc0"
+                    color="#60ACEB"
                   >
                     <Flex align="center" gap="small">
                       <Badge className="display-none skill-badge">
-                        <Avatar src={`../email-1.png`} />
+                        <Avatar src={`../python.png`} />
                       </Badge>
                       <span className="skill-title">Python</span>
                     </Flex>
@@ -179,11 +179,11 @@ const Index = () => {
                     title="This section includes all my skills and the level of
                   proficiency I have in each of them. I am first and foremost a
                   Full Stack Software Engineer"
-                    color="#e7bfc0"
+                    color="#60ACEB"
                   >
                     <Flex align="center" gap="small">
                       <Badge className="display-none skill-badge">
-                        <Avatar src={`../email-1.png`} />
+                        <Avatar src={`../gatsbyjs.png`} />
                       </Badge>
                       <span className="skill-title">JavaScript</span>
                     </Flex>
@@ -195,11 +195,11 @@ const Index = () => {
                     title="This section includes all my skills and the level of
                   proficiency I have in each of them. I am first and foremost a
                   Full Stack Software Engineer"
-                    color="#e7bfc0"
+                    color="#60ACEB"
                   >
                     <Flex align="center" gap="small">
                       <Badge className="display-none skill-badge">
-                        <Avatar src={`../email-1.png`} />
+                        <Avatar src={`../angular.png`} />
                       </Badge>
                       <span className="skill-title">Angular</span>
                     </Flex>
@@ -211,11 +211,11 @@ const Index = () => {
                     title="This section includes all my skills and the level of
                   proficiency I have in each of them. I am first and foremost a
                   Full Stack Software Engineer"
-                    color="#e7bfc0"
+                    color="#60ACEB"
                   >
                     <Flex align="center" gap="small">
                       <Badge className="display-none skill-badge">
-                        <Avatar src={`../email-1.png`} />
+                        <Avatar src={`../react.png`} />
                       </Badge>
                       <span className="skill-title">React</span>
                     </Flex>
