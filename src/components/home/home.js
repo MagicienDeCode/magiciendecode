@@ -149,22 +149,17 @@ const Home = () => {
             <div className="text-size">
               <h4>2022 annual appraisal</h4>
               <p>
-                Xiang has done an excellent year. I could see a lot of changes
-                happening. Xiang took the lead on architecture proposing several
-                scenarios using HLD (High Level Design) methodology/System
-                Design, and moving step by step to the specifics. He proposed to
-                add a proxy in the design which bring a lot of benefits. The
-                proposed solution came with several improvements linked to the
-                event management. All the points are discussed with the team
-                before being implemented. Some technical choices were debate and
-                I could see that Xiang did not impose its solution and if the
+                Xiang has done an excellent year. Xiang took the lead on
+                architecture proposing several scenarios using HLD (High Level
+                Design) methodology/System Design, and moving step by step to
+                the specifics. All the points are discussed with the team before
+                being implemented. Some technical choices were debate and I
+                could see that Xiang did not impose its solution and if the
                 arguments brought by the other team members was making sense, he
-                was able to accept their counter proposal. Xiang is in good
-                track to improve its communication skills. Technically he is
+                was able to accept their counter proposal. Technically he is
                 able to check the peers contribution and integrate it quickly in
                 its reasoning. This ability make him quick to spot issues and
-                find solutions/workaround. Again, a very good job in 2022. I
-                hope Xiang will continue to perform like this in 2023.
+                find solutions/workaround. Again, a very good job in 2022.
               </p>
             </div>
             <div className="text-size">
@@ -178,8 +173,7 @@ const Home = () => {
                 leader without creating any tension, by respecting its
                 colleagues as equal, and helping them when needed. Please
                 continue like this as 2024 will be the opportunity to build a
-                bigger picture of the company on the Direct Debit front. We will
-                need Xiang strength to build this new picture.
+                bigger picture of the company.
               </p>
             </div>
           </Carousel>

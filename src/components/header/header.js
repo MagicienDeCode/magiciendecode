@@ -27,17 +27,9 @@ const items = [
     <FileDoneOutlined style={{ fontSize: '1.3em' }} />
   ),
   getItem(
-    <span className="menu-titles ant-menu-title-content">Projects ↓</span>,
-    'sub1',
-    <AppstoreAddOutlined style={{ fontSize: '1.3em' }} />,
-    [
-      getItem('Option 3', '3'),
-      getItem('Option 4', '4'),
-      getItem('Submenu', 'sub1-2', null, [
-        getItem('Option 5', '5'),
-        getItem('Option 6', '6'),
-      ]),
-    ]
+    <span className="menu-titles ant-menu-title-content">Projects</span>,
+    '2',
+    <AppstoreAddOutlined style={{ fontSize: '1.3em' }} />
   ),
   getItem(
     <span className="menu-titles ant-menu-title-content">Articles ↓</span>,
