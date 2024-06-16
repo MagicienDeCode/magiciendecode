@@ -49,7 +49,7 @@ const items = [
       }}
       content={
         <QRCode
-          value="https://github.com/MagicienDeCode/images/blob/master/cv/xiang_en_2022_09_CV.pdf"
+          value="https://github.com/MagicienDeCode/images/blob/master/cv/xiang_en_2024.pdf"
           bordered={false}
         />
       }
