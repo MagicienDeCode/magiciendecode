@@ -9,8 +9,95 @@ import {
   Avatar,
   Flex,
   Divider,
+  Collapse,
 } from 'antd'
 import { Link } from 'gatsby'
+
+const slimpay_items = [
+  {
+    key: '1',
+    label: <span className="exp-title">Since 2023, Tech Lead</span>,
+    children: (
+      <div className="black">
+        <p>
+          - Design and develop new open banking products, guiding team members,
+          propose technical improvements.
+        </p>
+        <p>
+          - Integration with Trustly products, new version of SlimCollects
+          (PIS/AIS)
+        </p>
+        <p>- Webhook projects.</p>
+        <p>- Instant payment solution.</p>
+      </div>
+    ),
+  },
+  {
+    key: '2',
+    label: (
+      <span className="exp-title">
+        Since 2021, Full Stack Software Engineer
+      </span>
+    ),
+    children: (
+      <div className="black">
+        <p>
+          - PIS team, design and develop new SlimCollect(PIS) ecosystem,
+          springboot, axon framework CQRS, domain driven design, event sourcing.
+        </p>
+        <p>
+          - PaymentFactory team, 1.Resolve balance problems, 2.Help Financial
+          team to prepare ACPR audit, 3.Develop a kotlin based project with SQL
+          native (improve daily reconciliation of balance from 4 days to 1 hour
+          average).
+        </p>
+      </div>
+    ),
+  },
+  {
+    key: '3',
+    label: (
+      <span className="exp-title">Since 2018, Junior Software Engineer</span>
+    ),
+    children: (
+      <div className="black">
+        <p>
+          - Innovation team, one of the pioneers for Kotlin and open-banking
+          (PSD2) product.
+        </p>
+        <p>- Proof of Concept with Kotlin, connect to sandbox of bank.</p>
+        <p>- ETL system with Kotlin(Extract-Transform-Load).</p>
+      </div>
+    ),
+  },
+]
+
+const mb_items = [
+  {
+    key: '1',
+    label: <span className="exp-title">Full Stack Developer</span>,
+    children: (
+      <div className="black">
+        <p>
+          - Refactoring back office, participate in the development of new
+          features.
+        </p>
+        <p>
+          - Learn and create microservices for delivery service, billing
+          service.
+        </p>
+        <p>
+          - Participate in the design and development for the site
+          monbanquet.fr.
+        </p>
+        <p>
+          - Monitoring and maintaining of all microservices using AWS
+          Kubernetes.
+        </p>
+      </div>
+    ),
+  },
+]
 
 const Index = () => {
   return (
@@ -98,6 +185,7 @@ const Index = () => {
                 <Col flex={4}>
                   <h2>LI Xiang</h2>
                   <h3>Full Stack Software Engineer</h3>
+                  <h3>Tech Lead</h3>
                   <h3>Looking for freelance job</h3>
                 </Col>
                 <Col flex={1} className="basic-info-left-col">
@@ -315,64 +403,171 @@ const Index = () => {
             </div>
             <div>
               <h1 id="experience">EXPERIENCE</h1>
+              <Divider orientation="left">
+                <div className="exp-head">
+                  <img
+                    alt="slimpay"
+                    className="company-icon"
+                    src={`../slimpay.jpg`}
+                  />
+                  <a target="_blanc" href="https://www.slimpay.com/">
+                    <span className="text-link"> Slimpay </span>
+                  </a>
+                  <span className="time-text display-none">
+                    October 2018 - now (~ 6years)
+                  </span>
+                  <span className="time-text display-only-mobile">
+                    until now (~ 6years)
+                  </span>
+                </div>
+              </Divider>
+              <Collapse
+                defaultActiveKey={['1', '2', '3']}
+                ghost
+                items={slimpay_items}
+              />
               <div className="text-size">
                 <p>
-                  I define myself as a passionate and organized person. I am
-                  rigorous, efficient and I appreciate quality work.
+                  <span className="key-word">Key Words: </span>SpringBoot,
+                  Kotlin, Java, Domain Driven Design, Event Sourcing, CQRS,
+                  AxonFramework, Kafka, DynamoDB, PostgreSQL, Docker
                 </p>
               </div>
+              <br />
+              <Divider orientation="left">
+                <div className="exp-head">
+                  <img
+                    alt="monbanquet.fr"
+                    className="company-icon"
+                    src={`../mb.jpg`}
+                  />
+                  <a target="_blanc" href="https://monbanquet.fr/">
+                    <span className="text-link"> Monbanque.fr </span>
+                  </a>
+                  <span className="time-text display-none">
+                    Apr. - Sep. 2018 (6 months)
+                  </span>
+                  <span className="time-text display-only-mobile">
+                    (6 months)
+                  </span>
+                </div>
+              </Divider>
+              <Collapse ghost items={mb_items} />
               <div className="text-size">
                 <p>
-                  I am constantly learning about new technologies, and I
-                  undertake new personal projects in order to deepen my
-                  knowledge as well as to be able to propose solutions adapted
-                  to the work.
-                </p>
-              </div>
-              <div className="text-size">
-                <p>
-                  I particularly like working in a team but I also know how to
-                  be independent when necessary.
-                </p>
-              </div>
-              <div className="text-size">
-                <p>
-                  I thrive not only by working, but also by bringing value to
-                  the company, in which the ability to face challenges,
-                  recognize and rectify mistakes and be tenacious is essential.
+                  <span className="key-word">Key Words: </span>Java, SpringBoot,
+                  MongoDB, Kubernetes, React, Angular, Kafka
                 </p>
               </div>
             </div>
+            <br />
             <div>
               <h1 id="education">EDUCATION</h1>
-              <div className="text-size">
-                <p>
-                  I define myself as a passionate and organized person. I am
-                  rigorous, efficient and I appreciate quality work.
-                </p>
-              </div>
-              <div className="text-size">
-                <p>
-                  I am constantly learning about new technologies, and I
-                  undertake new personal projects in order to deepen my
-                  knowledge as well as to be able to propose solutions adapted
-                  to the work.
-                </p>
-              </div>
-              <div className="text-size">
-                <p>
-                  I particularly like working in a team but I also know how to
-                  be independent when necessary.
-                </p>
-              </div>
-              <div className="text-size">
-                <p>
-                  I thrive not only by working, but also by bringing value to
-                  the company, in which the ability to face challenges,
-                  recognize and rectify mistakes and be tenacious is essential.
-                </p>
-              </div>
+              <Divider orientation="left" className="divider-black">
+                <div className="exp-head">
+                  <img
+                    alt="paris-diderot"
+                    className="company-icon-p7"
+                    src={`../p72.png`}
+                  />
+                  <span className="text-link">University of Paris-Diderot</span>
+                  <span className="time-text display-none">
+                    2016-2018 (France)
+                  </span>
+                  <span className="time-text display-only-mobile">2018</span>
+                </div>
+              </Divider>
+              <Collapse
+                defaultActiveKey={['1']}
+                ghost
+                items={[
+                  {
+                    key: '1',
+                    label: (
+                      <span className="exp-title">
+                        Master of Computer Science
+                      </span>
+                    ),
+                    children: (
+                      <div className="black">
+                        <p>
+                          - Major in Engineering, Algorithms, Distribution
+                          systems and Database.
+                        </p>
+                      </div>
+                    ),
+                  },
+                ]}
+              />
+              <br />
+              <Divider orientation="left">
+                <div className="exp-head">
+                  <img
+                    alt="paris-diderot"
+                    className="company-icon-p7"
+                    src={`../p72.png`}
+                  />
+                  <span className="text-link">
+                    {' '}
+                    University of Paris-Diderot{' '}
+                  </span>
+                  <span className="time-text display-none">
+                    2015-2016 (France)
+                  </span>
+                  <span className="time-text display-only-mobile">2016</span>
+                </div>
+              </Divider>
+              <Collapse
+                ghost
+                items={[
+                  {
+                    key: '1',
+                    label: <span className="exp-title">French Language</span>,
+                    children: '',
+                  },
+                ]}
+              />
             </div>
+            <br />
+            <Divider orientation="left">
+              <div className="exp-head">
+                <img
+                  alt="henancaijingzhengfa"
+                  className="company-icon"
+                  src={`../cjzf.png`}
+                />
+                <span className="text-link">
+                  Henan University of Economics and Law
+                </span>
+                <span className="time-text display-none">
+                  2011-2015 (China)
+                </span>
+                <span className="time-text display-only-mobile">2015</span>
+              </div>
+            </Divider>
+            <Collapse
+              defaultActiveKey={['1']}
+              ghost
+              items={[
+                {
+                  key: '1',
+                  label: (
+                    <span className="exp-title">
+                      Bachelor of Information Management System
+                    </span>
+                  ),
+                  children: (
+                    <div className="black">
+                      <p>
+                        - Major in Engineering, Information systems and
+                        Accounting.
+                      </p>
+                    </div>
+                  ),
+                },
+              ]}
+            />
+            <br />
           </Col>
         </Row>
       </div>
