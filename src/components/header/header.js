@@ -36,10 +36,12 @@ const items = [
     'sub2',
     <FolderOpenOutlined style={{ fontSize: '1.3em' }} />,
     [
-      getItem('Option 7', '7'),
-      getItem('Option 8', '8'),
-      getItem('Option 9', '9'),
-      getItem('Option 10', '10'),
+      getItem('Book', '7'),
+      getItem('Chinese', '8'),
+      getItem('Java', '9'),
+      getItem('Kotlin', '10'),
+      getItem('Japanese', '11'),
+      getItem('English', '12'),
     ]
   ),
   getItem(
