@@ -5,7 +5,6 @@ import {
   AppstoreAddOutlined,
   FileDoneOutlined,
   FolderOpenOutlined,
-  ContactsOutlined,
   UnorderedListOutlined,
 } from '@ant-design/icons'
 import { Link } from 'gatsby'
@@ -62,7 +61,7 @@ const items = [
       <span />
     </Popover>,
     'link',
-    <ContactsOutlined style={{ fontSize: '1.3em' }} />
+    ''
   ),
 ]
 
