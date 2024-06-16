@@ -27,7 +27,9 @@ const items = [
     <FileDoneOutlined style={{ fontSize: '1.3em' }} />
   ),
   getItem(
-    <span className="menu-titles ant-menu-title-content">Projects</span>,
+    <Link to="/projects" className="decoration-none">
+      <span className="menu-titles ant-menu-title-content">Projects</span>
+    </Link>,
     '2',
     <AppstoreAddOutlined style={{ fontSize: '1.3em' }} />
   ),

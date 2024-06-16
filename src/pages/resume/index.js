@@ -189,12 +189,14 @@ const Index = () => {
                   <h3>Looking for freelance job</h3>
                 </Col>
                 <Col flex={1} className="basic-info-left-col">
-                  <Badge>
-                    <Avatar
-                      src={`../xiang2.jpg`}
-                      className="resume-xiang-avatar"
-                    />
-                  </Badge>
+                  <Link to="/" className="decoration-none">
+                    <Badge>
+                      <Avatar
+                        src={`../xiang2.jpg`}
+                        className="resume-xiang-avatar"
+                      />
+                    </Badge>
+                  </Link>
                 </Col>
               </Row>
             </div>
@@ -206,7 +208,7 @@ const Index = () => {
                   Full Stack Software Engineer but I also have a strong
                   background in machine learning and AI. This combination of
                   skills is what makes me unique and allows me to work on a wide
-                  range of <Link to="/">projects</Link>.
+                  range of <Link to="/projects">projects</Link>.
                 </p>
               </div>
               <Divider>Language</Divider>
