@@ -33,5 +33,19 @@ module.exports = {
         style: true,
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'markdown-pages',
+        path: `${__dirname}/src/data/`,
+      },
+    },
+    {
+      resolve: 'gatsby-transformer-csv',
+      options: {
+        noheader: true,
+      },
+    },
+    `gatsby-transformer-remark`,
   ],
 }

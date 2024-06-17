@@ -43,6 +43,8 @@ const items = [
       getItem('Kotlin', '10'),
       getItem('Japanese', '11'),
       getItem('English', '12'),
+      getItem('German', '13'),
+      getItem('French', '14'),
     ]
   ),
   getItem(
