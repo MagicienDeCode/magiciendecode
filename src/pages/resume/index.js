@@ -416,11 +416,8 @@ const Index = () => {
                   <a target="_blanc" href="https://www.slimpay.com/">
                     <span className="text-link"> Slimpay </span>
                   </a>
-                  <span className="time-text display-none">
+                  <span className="time-text ">
                     October 2018 - now (~ 6years)
-                  </span>
-                  <span className="time-text display-only-mobile">
-                    until now (~ 6years)
                   </span>
                 </div>
               </Divider>
@@ -447,12 +444,7 @@ const Index = () => {
                   <a target="_blanc" href="https://monbanquet.fr/">
                     <span className="text-link"> Monbanque.fr </span>
                   </a>
-                  <span className="time-text display-none">
-                    Apr. - Sep. 2018 (6 months)
-                  </span>
-                  <span className="time-text display-only-mobile">
-                    (6 months)
-                  </span>
+                  <span className="time-text">Apr. - Sep. 2018 (6 months)</span>
                 </div>
               </Divider>
               <Collapse ghost items={mb_items} />
@@ -473,11 +465,10 @@ const Index = () => {
                     className="company-icon-p7"
                     src={`../p72.png`}
                   />
-                  <span className="text-link">University of Paris-Diderot</span>
-                  <span className="time-text display-none">
-                    2016-2018 (France)
+                  <span className="text-link display-none">
+                    University of Paris-Diderot
                   </span>
-                  <span className="time-text display-only-mobile">2018</span>
+                  <span className="time-text">2016-2018 (France)</span>
                 </div>
               </Divider>
               <Collapse
@@ -510,14 +501,10 @@ const Index = () => {
                     className="company-icon-p7"
                     src={`../p72.png`}
                   />
-                  <span className="text-link">
-                    {' '}
-                    University of Paris-Diderot{' '}
+                  <span className="text-link display-none">
+                    University of Paris-Diderot
                   </span>
-                  <span className="time-text display-none">
-                    2015-2016 (France)
-                  </span>
-                  <span className="time-text display-only-mobile">2016</span>
+                  <span className="time-text">2015-2016 (France)</span>
                 </div>
               </Divider>
               <Collapse
@@ -539,13 +526,10 @@ const Index = () => {
                   className="company-icon"
                   src={`../cjzf.png`}
                 />
-                <span className="text-link">
+                <span className="text-link display-none">
                   Henan University of Economics and Law
                 </span>
-                <span className="time-text display-none">
-                  2011-2015 (China)
-                </span>
-                <span className="time-text display-only-mobile">2015</span>
+                <span className="time-text">2011-2015 (China)</span>
               </div>
             </Divider>
             <Collapse

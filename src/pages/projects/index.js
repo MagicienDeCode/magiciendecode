@@ -123,7 +123,10 @@ const Index = () => {
                     target="_blanc"
                     href="https://github.com/MagicienDeCode/machine_learning"
                   >
-                    <span className="text-link"> Machine Learning </span>
+                    <span className="text-link-no-color">
+                      {' '}
+                      Machine Learning{' '}
+                    </span>
                   </a>
                 </div>
               </Divider>
@@ -152,7 +155,7 @@ const Index = () => {
                   target="_blanc"
                   href="https://github.com/MagicienDeCode/py3_interview"
                 >
-                  <span className="text-link"> LeetCode Python3 </span>
+                  <span className="text-link-no-color"> LeetCode Python3 </span>
                 </a>
               </div>
             </Divider>
@@ -173,7 +176,7 @@ const Index = () => {
                   target="_blanc"
                   href="https://github.com/MagicienDeCode/LeetCode_Solution"
                 >
-                  <span className="text-link"> LeetCode Java </span>
+                  <span className="text-link-no-color"> LeetCode Java </span>
                 </a>
               </div>
             </Divider>
@@ -190,7 +193,9 @@ const Index = () => {
                   target="_blanc"
                   href="https://github.com/MagicienDeCode/magiciendecode"
                 >
-                  <span className="text-link">Personal Site (latest)</span>
+                  <span className="text-link-no-color">
+                    Personal Site (latest)
+                  </span>
                 </a>
               </div>
             </Divider>

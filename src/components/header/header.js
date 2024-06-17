@@ -90,7 +90,7 @@ const items_800 = [
         ''
       ),
       getItem(
-        <Link to="/projects" className="decoration-none">
+        <Link to="/#" className="decoration-none">
           <span className="menu-titles ant-menu-title-content">Articles</span>
         </Link>,
         '3',
