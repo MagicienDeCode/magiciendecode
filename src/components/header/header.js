@@ -26,16 +26,14 @@ const items = [
     <FileDoneOutlined style={{ fontSize: '1.3em' }} />
   ),
   getItem(
-    <Link to="/projects" className="decoration-none display-none-576">
+    <Link to="/projects" className="decoration-none">
       <span className="menu-titles ant-menu-title-content">Projects</span>
     </Link>,
     '2',
     <AppstoreAddOutlined style={{ fontSize: '1.3em' }} />
   ),
   getItem(
-    <span className="menu-titles ant-menu-title-content display-none-576">
-      Articles ↓
-    </span>,
+    <span className="menu-titles ant-menu-title-content">Articles ↓</span>,
     'sub2',
     <FolderOpenOutlined style={{ fontSize: '1.3em' }} />,
     [
@@ -71,6 +69,59 @@ const items = [
   ),
 ]
 
+const items_800 = [
+  getItem(
+    <Link to="/resume" className="decoration-none">
+      <span className="menu-titles ant-menu-title-content">Resume</span>
+    </Link>,
+    '1',
+    <FileDoneOutlined style={{ fontSize: '1.3em' }} />
+  ),
+  getItem(
+    <UnorderedListOutlined style={{ fontSize: '1.5em', color: '#1677ff' }} />,
+    'sub2',
+    <FolderOpenOutlined style={{ fontSize: '1.3em' }} />,
+    [
+      getItem(
+        <Link to="/projects" className="decoration-none">
+          <span className="menu-titles ant-menu-title-content">Projects</span>
+        </Link>,
+        '2',
+        ''
+      ),
+      getItem(
+        <Link to="/projects" className="decoration-none">
+          <span className="menu-titles ant-menu-title-content">Articles</span>
+        </Link>,
+        '3',
+        ''
+      ),
+      getItem(
+        <Popover
+          overlayInnerStyle={{
+            padding: 0,
+          }}
+          content={
+            <QRCode
+              value="https://github.com/MagicienDeCode/images/blob/master/cv/xiang_en_2024.pdf"
+              bordered={false}
+            />
+          }
+        >
+          <StaticImage
+            alt="cv"
+            className="cv-img"
+            src={'../../images/qrcode.png'}
+          />
+          <span />
+        </Popover>,
+        'link',
+        ''
+      ),
+    ]
+  ),
+]
+
 const MyHeader = () => {
   return (
     <Row className="header" wrap={false}>
@@ -94,6 +145,13 @@ const MyHeader = () => {
               style={{ fontSize: '1.5em', color: '#1677ff' }}
             />
           }
+          triggerSubMenuAction={'hover'}
+        />
+        <Menu
+          mode="horizontal"
+          className="header-menu-800"
+          selectable={false}
+          items={items_800}
           triggerSubMenuAction={'hover'}
         />
       </Col>
