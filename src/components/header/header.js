@@ -83,6 +83,7 @@ const MyHeader = () => {
       </Col>
       <Col className="header-menu-div">
         <Menu
+          style={{ minWidth: 0, flex: 'auto' }}
           mode="horizontal"
           className="header-menu"
           selectable={false}

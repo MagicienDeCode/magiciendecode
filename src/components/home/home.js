@@ -11,7 +11,11 @@ const Home = () => {
         <div className="home-xiang-avatar">
           <Link to="/">
             <Badge>
-              <Avatar src={`xiang4.jpg`} className="xiang-avatar" />
+              <Avatar
+                size={'small'}
+                src={`xiang4.jpg`}
+                className="xiang-avatar"
+              />
             </Badge>
           </Link>
         </div>
