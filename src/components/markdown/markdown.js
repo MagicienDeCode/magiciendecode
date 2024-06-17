@@ -5,9 +5,7 @@ import BackWard from './backward'
 import NavigationBar from './navigation-bar'
 
 const MarkdownPageTemplate = ({ data }) => {
-  console.log('===================================')
   const { markdownRemark } = data
-  console.log(markdownRemark)
   const { frontmatter, html } = markdownRemark
   const { path } = frontmatter
 
@@ -23,8 +21,8 @@ const MarkdownPageTemplate = ({ data }) => {
 }
 
 export const query = graphql`
-  query ($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query ($id: String!) {
+    markdownRemark(frontmatter: { path: { eq: $id } }) {
       html
       frontmatter {
         path
@@ -32,4 +30,5 @@ export const query = graphql`
     }
   }
 `
+
 export default MarkdownPageTemplate

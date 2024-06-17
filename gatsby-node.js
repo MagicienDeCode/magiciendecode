@@ -29,7 +29,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     createPage({
       path: node.frontmatter.path,
       component: markdownTemplate,
-      context: {}, // additional data can be passed via context
+      context: { id: node.frontmatter.path }, // additional data can be passed via context
     })
   })
 }
