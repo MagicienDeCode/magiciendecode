@@ -72,7 +72,7 @@ const Index = () => {
                 {
                   dot: (
                     <Badge>
-                      <Avatar src={`../skills.png`} size={20} />
+                      <Avatar src={`../other.png`} size={20} />
                     </Badge>
                   ),
                   color: 'grey',

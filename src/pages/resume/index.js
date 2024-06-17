@@ -363,7 +363,7 @@ const Index = () => {
                     <Badge className="skill-badge">
                       <Avatar src={`../european.png`} />
                     </Badge>
-                    <span className="skill-title">SEPA SDD/SCT/IGP</span>
+                    <span className="skill-title">SEPA SDD/SCT (instant)</span>
                   </Flex>
                 </Col>
                 <Col className="gutter-row" span={8}>
