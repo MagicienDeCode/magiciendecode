@@ -26,14 +26,16 @@ const items = [
     <FileDoneOutlined style={{ fontSize: '1.3em' }} />
   ),
   getItem(
-    <Link to="/projects" className="decoration-none">
+    <Link to="/projects" className="decoration-none display-none-576">
       <span className="menu-titles ant-menu-title-content">Projects</span>
     </Link>,
     '2',
     <AppstoreAddOutlined style={{ fontSize: '1.3em' }} />
   ),
   getItem(
-    <span className="menu-titles ant-menu-title-content">Articles ↓</span>,
+    <span className="menu-titles ant-menu-title-content display-none-576">
+      Articles ↓
+    </span>,
     'sub2',
     <FolderOpenOutlined style={{ fontSize: '1.3em' }} />,
     [
