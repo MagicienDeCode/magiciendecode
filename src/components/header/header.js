@@ -57,7 +57,11 @@ const items = [
         />
       }
     >
-      <StaticImage alt="cv" className="cv-img" src="../../images/qrcode.png" />
+      <StaticImage
+        alt="cv"
+        className="cv-img"
+        src={'../../images/qrcode.png'}
+      />
       <span />
     </Popover>,
     'link',
