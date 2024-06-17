@@ -7,6 +7,7 @@ const Index = () => {
   return (
     <div>
       <Breadcrumb
+        separator=">"
         className="projects-breads"
         items={[
           {
@@ -17,7 +18,7 @@ const Index = () => {
             ),
           },
           {
-            title: 'Resume',
+            title: 'Projects',
           },
         ]}
       />
@@ -86,7 +87,9 @@ const Index = () => {
           </Col>
           <Col className="projects-right">
             <div>
-              <h1 id="github">GITHUB</h1>
+              <h1 id="github" className="projects-right-first">
+                GITHUB
+              </h1>
               <Row>
                 <Col flex={4}>
                   <p>All my projects are on GitHub. Click the link below:</p>

@@ -103,6 +103,7 @@ const Index = () => {
   return (
     <div>
       <Breadcrumb
+        separator=">"
         className="resume-breads"
         items={[
           {
