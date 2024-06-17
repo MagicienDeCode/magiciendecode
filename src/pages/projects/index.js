@@ -94,7 +94,7 @@ const Index = () => {
                     <h3>Talent is enduring patience</h3>
                   </a>
                 </Col>
-                <Col flex={1} className="basic-info-left-col">
+                <Col flex={1} className="basic-info-left-col display-none">
                   <Link to="/" className="decoration-none">
                     <Badge>
                       <Avatar
