@@ -12,6 +12,7 @@ import {
   Collapse,
 } from 'antd'
 import { Link } from 'gatsby'
+import FloatCV from '../../components/float-cv/float-cv'
 
 const slimpay_items = [
   {
@@ -102,6 +103,7 @@ const mb_items = [
 const Index = () => {
   return (
     <div>
+      <FloatCV />
       <Breadcrumb
         separator=">"
         className="resume-breads"

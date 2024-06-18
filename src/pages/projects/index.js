@@ -2,10 +2,12 @@ import * as React from 'react'
 import './projects.less'
 import { Breadcrumb, Row, Col, Timeline, Badge, Avatar, Divider } from 'antd'
 import { Link } from 'gatsby'
+import FloatCV from '../../components/float-cv/float-cv'
 
 const Index = () => {
   return (
     <div>
+      <FloatCV />
       <Breadcrumb
         separator=">"
         className="projects-breads"
