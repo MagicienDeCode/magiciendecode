@@ -39,13 +39,48 @@ const items = [
     'sub2',
     <FolderOpenOutlined style={{ fontSize: '1.3em' }} />,
     [
-      getItem('Book', '7'),
-      getItem('Code', '9'),
-      getItem('Chinese', '8'),
-      getItem('Japanese', '11'),
-      getItem('English', '12'),
-      getItem('German', '13'),
-      getItem('French', '14'),
+      getItem(
+        <Link to="/articles/#book" className="decoration-none">
+          <span>Book</span>
+        </Link>,
+        '7'
+      ),
+      getItem(
+        <Link to="/articles/#code" className="decoration-none">
+          <span>Code</span>
+        </Link>,
+        '9'
+      ),
+      getItem(
+        <Link to="/articles/#zh" className="decoration-none">
+          <span>Chinese</span>
+        </Link>,
+        '8'
+      ),
+      getItem(
+        <Link to="/articles/#ja" className="decoration-none">
+          <span>Japanese</span>
+        </Link>,
+        '11'
+      ),
+      getItem(
+        <Link to="/articles/#fr" className="decoration-none">
+          <span>French</span>
+        </Link>,
+        '12'
+      ),
+      getItem(
+        <Link to="/articles/#de" className="decoration-none">
+          <span>German</span>
+        </Link>,
+        '13'
+      ),
+      getItem(
+        <Link to="/articles/#uk" className="decoration-none">
+          <span>English</span>
+        </Link>,
+        '14'
+      ),
     ]
   ),
   getItem(
