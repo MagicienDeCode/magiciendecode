@@ -10,7 +10,7 @@ const Index = () => {
       <FloatCV />
       <Breadcrumb
         separator=">"
-        className="projects-breads"
+        className="pages-breads"
         items={[
           {
             title: (
@@ -25,10 +25,10 @@ const Index = () => {
         ]}
       />
       <div>
-        <Row className="projects-row">
-          <Col className="projects-left display-none">
+        <Row className="pages-row">
+          <Col className="pages-left display-none">
             <Timeline
-              className="projects-timeline"
+              className="pages-timeline"
               items={[
                 {
                   dot: (
@@ -39,7 +39,7 @@ const Index = () => {
                   color: 'grey',
                   children: (
                     <Link to="#github" className="decoration-none">
-                      <span className="projects-line-text">GITHUB</span>
+                      <span className="pages-line-text">GITHUB</span>
                     </Link>
                   ),
                 },
@@ -52,9 +52,7 @@ const Index = () => {
                   color: 'grey',
                   children: (
                     <Link to="#machine-learning" className="decoration-none">
-                      <span className="projects-line-text">
-                        MACHINE LEARNING
-                      </span>
+                      <span className="pages-line-text">MACHINE LEARNING</span>
                     </Link>
                   ),
                 },
@@ -67,7 +65,7 @@ const Index = () => {
                   color: 'grey',
                   children: (
                     <Link to="#algorithm" className="decoration-none">
-                      <span className="projects-line-text">ALGORITHM</span>
+                      <span className="pages-line-text">ALGORITHM</span>
                     </Link>
                   ),
                 },
@@ -80,18 +78,18 @@ const Index = () => {
                   color: 'grey',
                   children: (
                     <Link to="#others" className="decoration-none">
-                      <span className="projects-line-text">OTHERS</span>
+                      <span className="pages-line-text">OTHERS</span>
                     </Link>
                   ),
                 },
               ]}
             />
           </Col>
-          <Col className="projects-right">
+          <Col className="pages-right">
             <div>
-              <h1 id="github" className="projects-right-first">
+              <h2 id="github" className="pages-right-first">
                 GITHUB
-              </h1>
+              </h2>
               <Row>
                 <Col flex={4}>
                   <p>All my projects are on GitHub. Click the link below:</p>
@@ -104,7 +102,7 @@ const Index = () => {
                     <Badge>
                       <Avatar
                         src={`../xiang3.jpg`}
-                        className="projects-xiang-avatar"
+                        className="pages-xiang-avatar"
                       />
                     </Badge>
                   </Link>
@@ -113,7 +111,7 @@ const Index = () => {
             </div>
 
             <div>
-              <h1 id="machine-learning">MACHINE LEARNING</h1>
+              <h2 id="machine-learning">MACHINE LEARNING</h2>
               <Divider orientation="left">
                 <div className="exp-head">
                   <img
@@ -125,10 +123,7 @@ const Index = () => {
                     target="_blanc"
                     href="https://github.com/MagicienDeCode/machine_learning"
                   >
-                    <span className="text-link-no-color">
-                      {' '}
-                      Machine Learning{' '}
-                    </span>
+                    <span className="text-link-no-color">Machine Learning</span>
                   </a>
                 </div>
               </Divider>
@@ -145,7 +140,7 @@ const Index = () => {
               <br />
             </div>
             <br />
-            <h1 id="algorithm">ALGORITHM</h1>
+            <h2 id="algorithm">ALGORITHM</h2>
             <Divider orientation="left">
               <div className="exp-head">
                 <img
@@ -183,7 +178,7 @@ const Index = () => {
               </div>
             </Divider>
             <br />
-            <h1 id="others">Others</h1>
+            <h2 id="others">Others</h2>
             <Divider orientation="left">
               <div className="exp-head">
                 <img

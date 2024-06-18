@@ -2,8 +2,8 @@ import './markdown.less'
 import { graphql } from 'gatsby'
 import React from 'react'
 import BackWard from './backward'
-import BackTop from './backtop'
 import NavigationBar from './navigation-bar'
+import { FloatButton } from 'antd'
 
 const MarkdownPageTemplate = ({ data }) => {
   const { markdownRemark } = data
@@ -16,7 +16,7 @@ const MarkdownPageTemplate = ({ data }) => {
         <BackWard path={path} />
         <NavigationBar paths={path.substring(1)} />
         <div className="md-main" dangerouslySetInnerHTML={{ __html: html }} />
-        <BackTop />
+        <FloatButton.BackTop />
       </div>
     </div>
   )

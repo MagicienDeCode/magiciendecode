@@ -121,7 +121,7 @@ const Home = () => {
       </div>
 
       <div className="home-right">
-        <h1>About Me</h1>
+        <h2>About Me</h2>
         <div className="text-size">
           <p>
             I define myself as a passionate and organized person. I am rigorous,

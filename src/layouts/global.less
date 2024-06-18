@@ -1,7 +1,6 @@
 html, 
 body {
     width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden; 
@@ -13,6 +12,42 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.pages-breads{
+  margin: 1em 1em 1em 0;
+}
+.pages-row{
+  flex-flow: nowrap;
+}
+.pages-left{
+  flex: 270px;
+}
+.pages-timeline{
+  margin-top: 50px;
+  width: 270px;
+  position: sticky;
+  top: 120px;
+}
+.pages-line-text{
+  color: black;
+  font-weight: bold;
+}
+
+.pages-right{
+  flex: auto;
+}
+
+.pages-right h2:before{
+  content: " ";
+  margin-top: -80px;
+  height: 80px;
+  display: block;
+}
+
+.pages-xiang-avatar{
+  width: 150px;
+  height: 150px;
 }
 
 .bg-linear-bk {

@@ -33,14 +33,15 @@ const items = [
     <AppstoreAddOutlined style={{ fontSize: '1.3em' }} />
   ),
   getItem(
-    <span className="menu-titles ant-menu-title-content">Articles ↓</span>,
+    <Link to="/articles" className="decoration-none">
+      <span className="menu-titles ant-menu-title-content">Articles ↓</span>
+    </Link>,
     'sub2',
     <FolderOpenOutlined style={{ fontSize: '1.3em' }} />,
     [
       getItem('Book', '7'),
+      getItem('Code', '9'),
       getItem('Chinese', '8'),
-      getItem('Java', '9'),
-      getItem('Kotlin', '10'),
       getItem('Japanese', '11'),
       getItem('English', '12'),
       getItem('German', '13'),
@@ -92,7 +93,7 @@ const items_800 = [
         ''
       ),
       getItem(
-        <Link to="/#" className="decoration-none">
+        <Link to="/articles" className="decoration-none">
           <span className="menu-titles ant-menu-title-content">Articles</span>
         </Link>,
         '3',

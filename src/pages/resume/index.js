@@ -106,7 +106,7 @@ const Index = () => {
       <FloatCV />
       <Breadcrumb
         separator=">"
-        className="resume-breads"
+        className="pages-breads"
         items={[
           {
             title: (
@@ -121,10 +121,10 @@ const Index = () => {
         ]}
       />
       <div>
-        <Row className="resume-row">
-          <Col className="resume-left display-none">
+        <Row className="pages-row">
+          <Col className="pages-left display-none">
             <Timeline
-              className="resume-timeline"
+              className="pages-timeline"
               items={[
                 {
                   dot: (
@@ -135,7 +135,7 @@ const Index = () => {
                   color: 'grey',
                   children: (
                     <Link to="#basic-info" className="decoration-none">
-                      <span className="resume-line-text">RESUME</span>
+                      <span className="pages-line-text">RESUME</span>
                     </Link>
                   ),
                 },
@@ -148,7 +148,7 @@ const Index = () => {
                   color: 'grey',
                   children: (
                     <Link to="#skills" className="decoration-none">
-                      <span className="resume-line-text">SKILLS</span>
+                      <span className="pages-line-text">SKILLS</span>
                     </Link>
                   ),
                 },
@@ -161,7 +161,7 @@ const Index = () => {
                   color: 'grey',
                   children: (
                     <Link to="#experience" className="decoration-none">
-                      <span className="resume-line-text">EXPERIENCE</span>
+                      <span className="pages-line-text">EXPERIENCE</span>
                     </Link>
                   ),
                 },
@@ -174,16 +174,16 @@ const Index = () => {
                   color: 'grey',
                   children: (
                     <Link to="#education" className="decoration-none">
-                      <span className="resume-line-text">EDUCATION</span>
+                      <span className="pages-line-text">EDUCATION</span>
                     </Link>
                   ),
                 },
               ]}
             />
           </Col>
-          <Col className="resume-right">
+          <Col className="pages-right">
             <div>
-              <h1 id="basic-info">Resume</h1>
+              <h2 id="basic-info">Resume</h2>
               <Row>
                 <Col flex={4}>
                   <h2>LI Xiang</h2>
@@ -196,7 +196,7 @@ const Index = () => {
                     <Badge>
                       <Avatar
                         src={`../xiang2.jpg`}
-                        className="resume-xiang-avatar"
+                        className="pages-xiang-avatar"
                       />
                     </Badge>
                   </Link>
@@ -204,7 +204,7 @@ const Index = () => {
               </Row>
             </div>
             <div>
-              <h1 id="skills">SKILLS</h1>
+              <h2 id="skills">SKILLS</h2>
               <div className="text-size">
                 <p>
                   This section includes all my skills. I am first and foremost a
@@ -407,7 +407,7 @@ const Index = () => {
               <br />
             </div>
             <div>
-              <h1 id="experience">EXPERIENCE</h1>
+              <h2 id="experience">EXPERIENCE</h2>
               <Divider orientation="left">
                 <div className="exp-head">
                   <img
@@ -467,7 +467,7 @@ const Index = () => {
             </div>
             <br />
             <div>
-              <h1 id="education">EDUCATION</h1>
+              <h2 id="education">EDUCATION</h2>
               <Divider orientation="left" className="divider-black">
                 <div className="exp-head">
                   <img
