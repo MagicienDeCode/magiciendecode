@@ -416,8 +416,11 @@ const Index = () => {
                   <a target="_blanc" href="https://www.slimpay.com/">
                     <span className="text-link"> Slimpay </span>
                   </a>
-                  <span className="time-text ">
+                  <span className="time-text display-none">
                     October 2018 - now (~ 6years)
+                  </span>
+                  <span className="time-text display-only-mobile">
+                    until now (~ 6years)
                   </span>
                 </div>
               </Divider>
@@ -444,7 +447,12 @@ const Index = () => {
                   <a target="_blanc" href="https://monbanquet.fr/">
                     <span className="text-link"> Monbanque.fr </span>
                   </a>
-                  <span className="time-text">Apr. - Sep. 2018 (6 months)</span>
+                  <span className="time-text display-none">
+                    Apr. - Sep. 2018 (6 months)
+                  </span>
+                  <span className="time-text display-only-mobile">
+                    Intern (6 months)
+                  </span>
                 </div>
               </Divider>
               <Collapse ghost items={mb_items} />

@@ -1,12 +1,13 @@
 import * as React from 'react'
 import { Avatar, Badge, Flex, Row, Col, Carousel } from 'antd'
 import { Link } from 'gatsby'
-
+import FloatCV from '../float-cv/float-cv'
 import './home.less'
 
 const Home = () => {
   return (
     <Flex wrap="wrap">
+      <FloatCV />
       <div className="home-left">
         <div className="home-xiang-avatar">
           <Link to="/">
