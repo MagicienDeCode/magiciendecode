@@ -172,9 +172,11 @@ const Index = () => {
                   <span className="text-link">RECENT</span>
                 </div>
               </Divider>
-              <div className="page-index">
-                <PageLink titles={first5} />
-              </div>
+              <Row>
+                <Col span={24}>
+                  <PageLink titles={first5} />
+                </Col>
+              </Row>
             </div>
 
             <div>
@@ -189,9 +191,11 @@ const Index = () => {
                   <span className="text-link">BOOK</span>
                 </div>
               </Divider>
-              <div className="page-index">
-                <PageLink titles={bookJson.children} />
-              </div>
+              <Row>
+                <Col span={24}>
+                  <PageLink titles={bookJson.children} />
+                </Col>
+              </Row>
               <br />
               <h2 id="code"> </h2>
               <Divider orientation="left">
@@ -204,12 +208,12 @@ const Index = () => {
                   <span className="text-link">CODE</span>
                 </div>
               </Divider>
-              <div className="page-index">
-                <PageLink titles={kotlinJson.children} />
-              </div>
-              <div className="page-index">
-                <PageLink titles={javaJson.children} />
-              </div>
+              <Row>
+                <Col span={24}>
+                  <PageLink titles={kotlinJson.children} />
+                  <PageLink titles={javaJson.children} />
+                </Col>
+              </Row>
               <br />
               <h2 id="zh"> </h2>
               <Divider orientation="left">
@@ -222,9 +226,11 @@ const Index = () => {
                   <span className="text-link">CHINESE</span>
                 </div>
               </Divider>
-              <div className="page-index">
-                <PageLink titles={ChineseJson.children} />
-              </div>
+              <Row>
+                <Col span={24}>
+                  <PageLink titles={ChineseJson.children} />
+                </Col>
+              </Row>
               <br />
               <h2 id="ja"> </h2>
               <Divider orientation="left">
@@ -237,9 +243,11 @@ const Index = () => {
                   <span className="text-link">JAPANESE</span>
                 </div>
               </Divider>
-              <div className="page-index">
-                <PageLink titles={japaneseJson.children} />
-              </div>
+              <Row>
+                <Col span={24}>
+                  <PageLink titles={japaneseJson.children} />
+                </Col>
+              </Row>
               <br />
               <h2 id="uk"> </h2>
               <Divider orientation="left">
@@ -252,9 +260,11 @@ const Index = () => {
                   <span className="text-link">ENGLISH</span>
                 </div>
               </Divider>
-              <div className="page-index">
-                <PageLink titles={englishJson.children} />
-              </div>
+              <Row>
+                <Col span={24}>
+                  <PageLink titles={englishJson.children} />
+                </Col>
+              </Row>
               <br />
               <h2 id="de"> </h2>
               <Divider orientation="left">

@@ -1,7 +1,7 @@
 import * as React from 'react'
 import './float-cv.less'
 import { StaticImage } from 'gatsby-plugin-image'
-import { QRCode, Popover, FloatButton, ConfigProvider } from 'antd'
+import { QRCode, Popover, FloatButton } from 'antd'
 
 const FloatCV = () => {
   return (

@@ -1,11 +1,9 @@
 import './japanese-fifty.less'
 
-import { Table, Tabs, Breadcrumb } from 'antd'
+import { Table, Tabs } from 'antd'
 import { graphql } from 'gatsby'
 import React from 'react'
-
-import BackWard from './../../../components/markdown/backward'
-import { Link } from 'gatsby'
+import CommonArticleHeader from '../../../components/header/common-article-header'
 
 const TabPane = Tabs.TabPane
 
@@ -70,23 +68,7 @@ export default function JapaneseFifty({ data }) {
 
   return (
     <div>
-      <BackWard path={'/articles'} />
-      <Breadcrumb
-        separator=">"
-        className="pages-breads"
-        items={[
-          {
-            title: (
-              <Link to="/" className="decoration-none">
-                Home
-              </Link>
-            ),
-          },
-          {
-            title: 'Articles',
-          },
-        ]}
-      />
+      <CommonArticleHeader />
       <Tabs defaultActiveKey="1">
         <TabPane tab="ひらがな" key="1">
           <Table
