@@ -482,7 +482,6 @@ const Index = () => {
                 </div>
               </Divider>
               <Collapse
-                defaultActiveKey={['1']}
                 ghost
                 items={[
                   {
@@ -543,7 +542,6 @@ const Index = () => {
               </div>
             </Divider>
             <Collapse
-              defaultActiveKey={['1']}
               ghost
               items={[
                 {
