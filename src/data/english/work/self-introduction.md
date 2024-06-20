@@ -4,6 +4,13 @@ path: '/english/self-introduction'
 
 # self-introduction 自我介绍
 
+## 202406
+
+- Hello everyone, my name is Li Xiang. I'm working as a Tech Lead at Slimpay. My role involves designing and developing new open banking products, guiding team members, and coaching new arrivals. I have more than 10 years of coding experience, including 6 years in the financial domain. Additionally, I have a solid background in SEPA payment solutions.
+
+- I am applying for the Tech Mentor position because I enjoy sharing knowledge both at work and in life. I have solved more than 1,000 algorithm problems on LeetCode (I can share my screen to show this). Additionally, I have created around 550 videos to explain my ideas and code.
+
+
 ## Mention past experiences and proven successes that are related to the position
 
 - situation -> task -> action -> result
