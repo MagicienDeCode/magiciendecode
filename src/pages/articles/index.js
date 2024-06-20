@@ -19,6 +19,10 @@ import japaneseJson from '../../data/japanese/title.json'
 import javaJson from '../../data/java/title.json'
 import kotlinJson from '../../data/kotlin/title.json'
 
+import englishCultureJson from '../../data/english/culture/title.json'
+import englishGrammerJson from '../../data/english/grammer/title.json'
+import englishWorkJson from '../../data/english/work/title.json'
+
 const first5 = [
   ChineseJson.children,
   japaneseJson.children,
@@ -261,6 +265,21 @@ const Index = () => {
               <Row>
                 <Col span={24}>
                   <PageLink titles={englishJson.children} />
+                </Col>
+              </Row>
+              <Row>
+                <Col span={24}>
+                  <PageLink titles={englishCultureJson.children} />
+                </Col>
+              </Row>
+              <Row>
+                <Col span={24}>
+                  <PageLink titles={englishGrammerJson.children} />
+                </Col>
+              </Row>
+              <Row>
+                <Col span={24}>
+                  <PageLink titles={englishWorkJson.children} />
                 </Col>
               </Row>
               <br />
