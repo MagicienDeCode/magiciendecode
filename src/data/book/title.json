@@ -45,6 +45,11 @@
       "title": "心态",
       "page": "book/xintai", 
       "creationDate": "2024-04-21"
+    },
+    {
+      "title": "经济学通识",
+      "page": "book/jingjixuetongshi", 
+      "creationDate": "2024-07-03"
     }
   ]
 }
