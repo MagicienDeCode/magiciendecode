@@ -30,6 +30,11 @@
       "title": "Kotlin Hibernate",
       "page": "kotlin/kotlin-hibernate",
       "creationDate": "2021-01-27"
+    },
+    {
+      "title": "Kafka vs RabbitMQ",
+      "page": "/kotlin/kafka",
+      "creationDate": "2024-07-15"
     }
   ]
 }
