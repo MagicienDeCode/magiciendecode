@@ -1,5 +1,5 @@
 ---
-path: '/chinese/jitang'
+path: '/chinese/xiuxin'
 ---
 
 # 修心
