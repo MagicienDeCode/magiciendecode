@@ -33,7 +33,7 @@
     },
     {
       "title": "Kafka vs RabbitMQ",
-      "page": "/kotlin/kafka",
+      "page": "kotlin/kafka",
       "creationDate": "2024-07-15"
     }
   ]
